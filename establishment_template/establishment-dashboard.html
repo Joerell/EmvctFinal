@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id = "title"></title>
+    
+</head>
+<body>
+    <h1>Establishment</h1>
+    <button onclick="logout()">LogOut Button</button>
+    <h4 id = "ename"></h4>
+    <p id = "address"></p>
+    <p id = "contact_no"></p>
+    <br>
+    <br>
+    <br>
+    
+    <img id = "profileId" width = "200px" height = "250px">
+        
+    
+    <div class = "container">
+        <button id = "Qr-Scanner">QR SCANNER</button>
+            <div class = "modal"></div>
+                <div class = "row">
+                    <video id = "preview" width="30%"></video>
+        </div>
+    </div>
+
+        <div class = "col-md-6">
+            <label>Scan QR Code</label>
+            <input type="text" id = "testing" readonly = "" placeholder="Scan Qr Code" class ="form-control">
+        </div>
+    </div>
+
+
+    <input type="file" id="photo" />
+    <br>
+    <br>
+    <br>
+    <button onclick="uploadImage()">Upload Image</button>
+
+    <script src = "https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "/establishment-dashboard.js"></script>   
+</body>
+</html>
